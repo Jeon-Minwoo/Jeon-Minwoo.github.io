@@ -1,4 +1,9 @@
-
+---
+layout: post
+title: Waymo Dataset Preview
+date: 2022-07-21 21:34:23 +0900
+category: Autonomous Dataset
+---
 # 개요
 
 machine perception, autonomous driving technology 분야를 발전시키는데 도움을 주기 위해 Waymo Open Dataset 공개
@@ -11,7 +16,7 @@ machine perception, autonomous driving technology 분야를 발전시키는데 �
 - Sensor
     - Mid-range LiDAR 1대
     
-    ![Untitled](Waymo%20Dataset%20Preview%20f8d29d2f29e9414ebfd6f627ee5b631e/Untitled.png)
+    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/906d3439-ea92-48ca-abd6-10bdca2f6c00/Untitled.png)
     
     - Short-range LiDAR 4대
     - 전,측면 카메라 5대
