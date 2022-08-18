@@ -2,7 +2,7 @@
 layout: post
 title: Waymo Dataset Preview
 date: 2022-07-21 21:34:23 +0900
-category: Autonomous Dataset
+category: autonomous_dataset
 ---
 # 개요
 
