@@ -4,30 +4,10 @@ title: About
 permalink: /about/
 ---
 
-## Theme Monos
-> Simple and lightweight theme for Jekyll
+## 전민우 | Minwoo Jeon
+> 경희대학교 소프트웨어융합학과 인공지능 & 로보틱스 Lab(AIR Lab) 학부연구생 과정
 
-### Features
-- Responsive.
-- Syntax Highlight
-- Most optimized theme for tech blog.
-- Lightweight with minimum stylesheet.
-- Easy to customize.
-- Offers category menu.
+- [github](https://github.com/Jeon-Minwoo)
+- [KHU AIR Lab](http://airlab.khu.ac.kr)
 
-### _config.yml
-> Code block will look like this.
-```yml
-highlighter-theme: monokai //you can change your syntax color scheme.
-date_format: "%Y-%M-%D" //and date format.
-```
 
-### Screenshots
-#### Page
-![alt text](/public/img/screenshot-1.png)
-#### Articles
-![alt text](/public/img/screenshot-2.png)
-#### Page - Mobile
-![alt text](/public/img/screenshot-m1.png)
-#### Page - Articles
-![alt text](/public/img/screenshot-m2.png)
