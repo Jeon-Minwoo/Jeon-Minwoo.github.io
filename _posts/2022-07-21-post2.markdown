@@ -16,8 +16,6 @@ machine perception, autonomous driving technology 분야를 발전시키는데 �
 - Sensor
     - Mid-range LiDAR 1대
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/906d3439-ea92-48ca-abd6-10bdca2f6c00/Untitled.png)
-    
     - Short-range LiDAR 4대
     - 전,측면 카메라 5대
     
@@ -80,8 +78,6 @@ machine perception, autonomous driving technology 분야를 발전시키는데 �
 - 28 classes로 labeling → Car, Bus, Truck, Other Large Vehicle, Trailer, Ego Vehicle, Motorcycle, Bicycle, Pedestrian, Cyclist, Motorcyclist, Ground Animal, Bird, Pole, Sign, Traffic Light, Construction Cone, Pedestrian Object, Building, Road, Sidewalk, Road Marker, Lane Marker, Vegetation, Sky, Ground, Static, Dynamic
 
 **[Key Points]**
-
-![Untitled](Waymo%20Dataset%20Preview%20f8d29d2f29e9414ebfd6f627ee5b631e/Untitled%201.png)
 
 - 인체의 14개 key points의 2D & 3D bounding box labels의 집합을 제공한다. (including nose, right and left shoulders, elbows, wrists, hips, knees, ankle)
 - camera objects(2D key points) - # 172.6K object annotations
