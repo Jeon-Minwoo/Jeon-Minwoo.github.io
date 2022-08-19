@@ -15,7 +15,7 @@ machine perception, autonomous driving technology 분야를 발전시키는데 �
         - 2,030개 주행 구간에 대한 고해상도 센서 데이터 및 레이블
 - Sensor
     - Mid-range LiDAR 1대
-    
+    ![Untitled](https://user-images.githubusercontent.com/65657711/185523224-0113db4a-da36-4126-b51e-a13a6efb50b9.png)
     - Short-range LiDAR 4대
     - 전,측면 카메라 5대
     
@@ -73,6 +73,9 @@ machine perception, autonomous driving technology 분야를 발전시키는데 �
     - 그림이 그려진 부분을 앞쪽으로 인식한다.
 
 **[2D Video Panoptic Segmentation]**
+![Untitled-2](https://user-images.githubusercontent.com/65657711/185523423-1a6c96d1-c17b-4720-aebd-d927223e525e.png)
+
+
 
 - 5대의 카메라에 의해 캡처한 2860개의 시간 시퀀스로 그룹화된 100k 카메라 이미지에 대한 semantic & instance segmentation label을 제공한다.
 - 28 classes로 labeling → Car, Bus, Truck, Other Large Vehicle, Trailer, Ego Vehicle, Motorcycle, Bicycle, Pedestrian, Cyclist, Motorcyclist, Ground Animal, Bird, Pole, Sign, Traffic Light, Construction Cone, Pedestrian Object, Building, Road, Sidewalk, Road Marker, Lane Marker, Vegetation, Sky, Ground, Static, Dynamic
@@ -98,5 +101,3 @@ machine perception, autonomous driving technology 분야를 발전시키는데 �
 - 모든 LiDAR 포인트에 대한 Dense한 labels
 - 레이블은 고해상도 LiDAR 센서로 캡처한 전체 데이터 세트에 대해 2Hz로 제공.
 - 23 classes로 labeling → Car, Truck, Bus, Motorcyclist, Bicyclist, Pedestrian, Sign, Traffic Light, Pole, Construction Cone, Bicycle, Motorcycle, Building, Vegetation, Tree Trunk, Curb, Road, Lane Marker, Walkable, Sidewalk, Other Ground, Other Vehicle, Undefined
-
-/
