@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Waymo Dataset Preview
+title: Waymo Dataset Structure
 date: 2022-07-23 21:34:23 +0900
 category: autonomous_dataset
 ---
