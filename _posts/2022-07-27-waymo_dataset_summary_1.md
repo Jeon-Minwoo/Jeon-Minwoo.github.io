@@ -5,10 +5,6 @@ date: 2022-07-27 19:20:23 +0900
 category: autonomous_dataset
 ---
 # Waymo Open Dataset summary_1
-
-Created: 2022년 8월 19일 오전 11:16
-Last Edited Time: 2022년 8월 19일 오전 11:36
-
 ## *.tfrecord
 
 ---
