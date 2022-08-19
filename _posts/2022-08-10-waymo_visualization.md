@@ -5,12 +5,15 @@ date: 2022-08-10 19:20:23 +0900
 category: autonomous_dataset
 ---
 # Visualize manual code
+모든 코드는 github에 upload
+(https://github.com/AIRLABkhu/AIRlab_dataset/tree/main/waymo)
 
 ### [2D bbox visualize]
 
 camera labels 
 
-![Untitled](Visualize%20manual%20code%2016385ee154564bf1aa1b6cfeaf265290/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/65657711/185533585-36f56516-d853-4322-ba2e-b2ee4110039f.png)
+
 
 label.box.center_x, label.box.center_y, label.box.length, lable.box.width를 이용해서 2d bbox를 visualize 할 수 있다. 
 
@@ -62,22 +65,25 @@ for index, image in enumerate(frame.images):
 - (frame.)projected_lidar_labels: 카메라 이미지에 투영된 기본 3D LiDAR 레이블
 - Visualize projected_lidar_labels
 
-![Untitled](Visualize%20manual%20code%2016385ee154564bf1aa1b6cfeaf265290/Untitled%201.png)
+![Untitled 1](https://user-images.githubusercontent.com/65657711/185533676-0adbb1bb-3070-41cd-8a25-7c4f4eb264f4.png)
+
 
 - Visualize camera_synced_box Projections
     
     (3D Wireframe boxes)
     
 
-![Untitled](Visualize%20manual%20code%2016385ee154564bf1aa1b6cfeaf265290/Untitled%202.png)
+![Untitled 2](https://user-images.githubusercontent.com/65657711/185533690-9db159ff-2bf1-4a67-9962-56faaebf266c.png)
+
 
 (2D Boxes)
 
-![Untitled](Visualize%20manual%20code%2016385ee154564bf1aa1b6cfeaf265290/Untitled%203.png)
+![Untitled 3](https://user-images.githubusercontent.com/65657711/185533708-4d2b9455-0b66-4206-be29-2405791a835e.png)
+
 
 ### [2D panoramic video panoptic segmentation]
 
-![스크린샷 2022-08-09 오전 10.31.52.png](Visualize%20manual%20code%2016385ee154564bf1aa1b6cfeaf265290/%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2022-08-09_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%258C%25E1%2585%25A5%25E1%2586%25AB_10.31.52.png)
+![%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-08-09_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_10 31 52](https://user-images.githubusercontent.com/65657711/185533856-d83045c8-1047-4c6d-8d90-d61b845bb64a.png)
 
 Waymo Open Dataset 에서 ‘2022: Added 2D Video panoptic segmentation labels’ 되어 있는 데이터셋을 다운받는다. (그 외 데이터는 annotation 되어 있지 않다.)
 
@@ -144,8 +150,9 @@ plt.axis('off')
 plt.show()
 
 ```
+![Untitled 4](https://user-images.githubusercontent.com/65657711/185533800-9fc2736a-667b-4915-afe7-c0a85d236ad3.png)
 
-![Untitled](Visualize%20manual%20code%2016385ee154564bf1aa1b6cfeaf265290/Untitled%204.png)
+
 
 Panoptic label 이 198개의 Frames 중 전부 있는 것이 아니고 일부 구간만 존재한다. 
 
@@ -183,11 +190,15 @@ plt.title('undistortion')
 plt.axis = ('off')
 ```
 
-![Untitled](Visualize%20manual%20code%2016385ee154564bf1aa1b6cfeaf265290/Untitled%205.png)
+![Untitled 5](https://user-images.githubusercontent.com/65657711/185533823-834b45cf-c188-45f9-ae92-6ece14ca6cc1.png)
+
 
 ### [3D floating]
+![Untitled-3](https://user-images.githubusercontent.com/65657711/185534639-b85fedd1-640d-4424-b52d-688e10137262.png)
+
 
 matplotlib
+
 
 ```python
 
