@@ -1,9 +1,14 @@
+---
+layout: post
+title: Waymo Dataset Preview
+date: 2022-07-23 21:34:23 +0900
+category: autonomous_dataset
+---
+
 # Dataset Structure
+![Untitled](https://user-images.githubusercontent.com/65657711/185524283-ada1f911-0748-4c92-a2b2-2be62ef588e0.png)
 
-Created: 2022년 7월 23일 오후 9:47
-Last Edited Time: 2022년 8월 2일 오후 2:11
 
-![Untitled](Dataset%20Structure%2040c83b85993147bb8710bc757dff087c/Untitled.png)
 
 ### message **Frame**
 
@@ -161,7 +166,8 @@ Last Edited Time: 2022년 8월 2일 오후 2:11
 
 : RangeImage is a 2d tensor. The first dim (row) represents pitch, The second dim represents yaw.
 
-![Untitled](Dataset%20Structure%2040c83b85993147bb8710bc757dff087c/Untitled%201.png)
+![Untitled 1](https://user-images.githubusercontent.com/65657711/185524386-33b05ce8-c2d4-4618-b778-b8d0e38f98df.png)
+
 
 - optional bytes **range_image_compressed** → [H, W, 4]
 
