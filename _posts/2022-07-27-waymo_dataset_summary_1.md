@@ -1,4 +1,10 @@
-# Waymo Open Dataset 정리_1
+---
+layout: post
+title: waymo open dataset summary_1
+date: 2022-07-27 19:20:23 +0900
+category: autonomous_dataset
+---
+# Waymo Open Dataset summary_1
 
 Created: 2022년 8월 19일 오전 11:16
 Last Edited Time: 2022년 8월 19일 오전 11:36
@@ -9,7 +15,8 @@ Last Edited Time: 2022년 8월 19일 오전 11:36
 
 ### waymo open dataset 포맷
 
-![Untitled](Waymo%20Open%20Dataset%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5_1%20318d43bb2f784b478d2489985f10020e/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/65657711/185531247-ed87f52a-428b-44e4-a5f7-106bbabeae3a.png)
+
 
 - *.tfrecord 이란
 : Tensorflow 에서 Protocol buffer 를 통해 직렬화된 정보를 저장하기 위한 포맷이다.
@@ -29,7 +36,7 @@ language-neutral 한 것이 특징이다.
 - 하나의 *.tfrecord 파일에 여러장의 프레임을 넣을 수 있다.
 - Waymo Open Dataset의 파일 분할
 
-![Untitled](Waymo%20Open%20Dataset%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5_1%20318d43bb2f784b478d2489985f10020e/Untitled%201.png)
+![Untitled 1](https://user-images.githubusercontent.com/65657711/185531305-3ac9902a-5801-43ab-8e7c-abc3840415c3.png)
 
 하나의 파일 별로 약 1GB 크기로 구성되어 있다.
 Camera 정보의 경우 하나의 *.tfrecord 마다 198 frames 장면 정보가 담겨있다.
@@ -41,7 +48,8 @@ Camera 정보의 경우 하나의 *.tfrecord 마다 198 frames 장면 정보가 
 
 ### Camera
 
-![Untitled](Waymo%20Open%20Dataset%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5_1%20318d43bb2f784b478d2489985f10020e/Untitled%202.png)
+![Untitled 2](https://user-images.githubusercontent.com/65657711/185531332-d29d8001-234a-4095-83b6-79bc5b0d17d0.png)
+
 
 **[Image Shape]**
 
@@ -51,7 +59,8 @@ Camera 정보의 경우 하나의 *.tfrecord 마다 198 frames 장면 정보가 
 - SIDE_LEFT: 1920 x 886
 - SIDE_RIGHT: 1920 x 886
 
-![Untitled](Waymo%20Open%20Dataset%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5_1%20318d43bb2f784b478d2489985f10020e/Untitled%203.png)
+![Untitled 3](https://user-images.githubusercontent.com/65657711/185531353-d016451d-b1c0-4666-b97e-7c0c91d0e49d.png)
+
 
 |  | F,FL,FR | SL,SR |
 | --- | --- | --- |
@@ -75,11 +84,12 @@ Camera 정보의 경우 하나의 *.tfrecord 마다 198 frames 장면 정보가 
 
 - **optional double pose_timestamp**
 
-**[Distortion Handling]**
+**[Distortion Handling]**   
 
-![Untitled](Waymo%20Open%20Dataset%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5_1%20318d43bb2f784b478d2489985f10020e/Untitled%204.png)
+![Untitled 4](https://user-images.githubusercontent.com/65657711/185531372-c7ab50f5-3186-4569-b6d6-59412e2a9268.png)   
 
-![Untitled](Waymo%20Open%20Dataset%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5_1%20318d43bb2f784b478d2489985f10020e/Untitled%205.png)
+![Untitled 5](https://user-images.githubusercontent.com/65657711/185531418-50e70a67-5cbf-40d2-8f0e-bebe98769ec6.png)
+
 
 - 1d Array of [f_u, f_v, c_u, c_v, **k{1, 2}, p{1, 2}, k{3}**].
 - Lens Distortion:
@@ -111,15 +121,17 @@ truncated to a maximum of 20 meters
 
 - RangeImage is a 2D tensor. The first dim(row) represents pitch, The second dim represents yaw.
 
-![Untitled](Waymo%20Open%20Dataset%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5_1%20318d43bb2f784b478d2489985f10020e/Untitled%206.png)
+![Untitled 6](https://user-images.githubusercontent.com/65657711/185531485-0198ce0b-9be2-4bd5-bd33-a3c8308e8289.png)
+
 
 - FRONT, REAR, SIDE_LEFT, SIDE_RIGHT: the number of points - 200 * 600 = 120000 points with a range of up to 20m
 - TOP: the number of points - 64 * 2650 = 169600 ****points with a range of up to 75m
 - Multiple return LiDAR: Number of return ⇒ 2
 
-![Untitled](Waymo%20Open%20Dataset%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5_1%20318d43bb2f784b478d2489985f10020e/Untitled%207.png)
+![Untitled 7](https://user-images.githubusercontent.com/65657711/185531500-a6ffcd60-198c-471a-bf25-6041edbd6963.png)
 
-![Untitled](Waymo%20Open%20Dataset%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5_1%20318d43bb2f784b478d2489985f10020e/Untitled%208.png)
+![Untitled 8](https://user-images.githubusercontent.com/65657711/185531522-df2d3dfd-64f3-4fef-a741-98ae250c1438.png)
+
 
 ⇒  second return이 나무, 물체의 가장자리를 표현하는데 도움을 준다.
 
@@ -137,7 +149,8 @@ channel 2: elongation (0 ~ 1)
 
 channel 3: is in any no label zone (1.0e+10)
 
-![Untitled](Waymo%20Open%20Dataset%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5_1%20318d43bb2f784b478d2489985f10020e/Untitled%209.png)
+![Untitled 9](https://user-images.githubusercontent.com/65657711/185531531-f8379af1-dbe1-4af1-8bbf-95e9586f5b99.png)
+
 
 - **optional bytes camera_projection_compressed → [H, W, 6]**
 
@@ -163,7 +176,8 @@ The roll, pitch and yaw are specified as 3-2-1 Euler angle rotations → roll ro
 
 **[Coordinate Structure]**
 
-![Untitled](Waymo%20Open%20Dataset%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5_1%20318d43bb2f784b478d2489985f10020e/Untitled%2010.png)
+![Untitled 10](https://user-images.githubusercontent.com/65657711/185531546-4df801e6-6bf6-48c6-a6e9-83d268d6361b.png)
+
 
 **[message CameraCalibration]**
 
@@ -171,8 +185,9 @@ The roll, pitch and yaw are specified as 3-2-1 Euler angle rotations → roll ro
 Radial distortion coefficients: k1, k2, k3
 Tangential distortion coefficients: p1, p2
 - **optional Transform extrinsic**: Camera frame to Vehicle frame
+- 
+![Untitled 11](https://user-images.githubusercontent.com/65657711/185531566-9db04bd9-38cc-4e9b-8a00-b8193db7bd95.png)
 
-![Untitled](Waymo%20Open%20Dataset%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5_1%20318d43bb2f784b478d2489985f10020e/Untitled%2011.png)
 
 **[message LaserCalibration]**
 
