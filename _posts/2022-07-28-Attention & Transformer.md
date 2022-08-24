@@ -3,7 +3,6 @@ layout: post
 title: Attention & Transformer
 date: 2022-07-28 19:20:23 +0900
 category: Transformer
-use_math: true
 ---
 # Attention & Transformer
 
