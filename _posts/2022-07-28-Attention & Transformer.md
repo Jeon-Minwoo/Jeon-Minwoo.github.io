@@ -3,7 +3,6 @@ layout: post
 title: Attention & Transformer
 date: 2022-07-28 19:20:23 +0900
 category: Transformer
-use_math: true
 ---
 # Attention & Transformer
 
@@ -66,7 +65,7 @@ Attention의 3 요소는 다음과 같습니다.
 
 **Positional Encoding**
 
-![Untitled](Transformer%20d14d3d6dad1b49e5a17ca695ee00c09b/Untitled%206.png)
+![Untitled](/public/img/attention_transformer/Transformer%20d14d3d6dad1b49e5a17ca695ee00c09b/Untitled%206.png)
 
 - RNN에서는 모델 자체적으로 input의 순서를 고려한다.
 - Recurrent connection이 제거된 Self-attention에서는 모델 자체가 위치 정보를 이용할 수 없다.
