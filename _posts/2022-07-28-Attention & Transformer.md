@@ -17,7 +17,6 @@ category: Transformer
 **seq2seq(Sequence to Sequence) structure 문제점**
 
 ![Untitled](/public/img/attention_transformer/Transformer%20d14d3d6dad1b49e5a17ca695ee00c09b/Untitled.png)
-
 - Encoder에서 각 단어의 embedding과 RNN의 hidden state를 거쳐서 정보가 압축이 되고, Encoder의 마지막 부분의 출력이 context vector가 된다.
 - Decoder에서는 context vector와 문장의 처음을 표시하는 SOS(Start of Sequence) 를 입력으로 받는다.
 - 각 단어의 의미를 하나의 벡터인 Context Vector안에 함축시키는 데 있어 정보 손실이 발생한다.
